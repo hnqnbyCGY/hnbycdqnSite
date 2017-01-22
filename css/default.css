@@ -5,3 +5,8 @@
 h1{margin: 0;}
 
 h2{margin: 0;}
+#wrap{ color: red; }
+#header{ height:500px; }
+.Con{ width:100%; min-width:1260px;}
+.inner{ width:1200px; margin:0 auto;}
+#headerLink{ background-color:#CCC; height:40px; }

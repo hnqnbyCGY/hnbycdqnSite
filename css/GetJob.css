@@ -1,0 +1,344 @@
+ul,
+li {
+    list-style: none;
+}
+
+ul,
+li,
+p,
+a,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrap {
+    margin: 0 auto;
+}
+
+#header {
+    height: 810px;
+}
+
+.Con {
+    width: 100%;
+}
+
+.inner {
+    width: 1206px;
+    margin: 0 auto;
+}
+
+#headerLink {
+    background-color: #5F001E;
+    height: 60px;
+    /*position: fixed;*/
+}
+
+#headerLinkCon {
+    overflow: hidden;
+    color: #BCCBCB;
+}
+
+#leftnav {
+    width: 400px;
+    height: 60px;
+    float: left;
+    line-height: 60px;
+    border: 1px solid red;
+}
+
+#leftnav img {
+    margin-left: 150px;
+}
+
+#rightnav {
+    width: 800px;
+    height: 60px;
+    float: right;
+    color: #BEB3A7;
+    border: 1px solid red;
+}
+
+#rightnav ul {
+    float: right;
+}
+
+#rightnav li {
+    float: left;
+    margin-left: 70px;
+    line-height: 60px;
+    font-weight: bolder;
+}
+
+.headerBanner {
+    margin-top: 60px;
+    background: url(../img/GetJobbanner.jpg) no-repeat center top;
+    height: 1000px;
+    width: 100%;
+}
+
+#middenBody {
+    width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+#middenPic {
+    background: url(../img/GetJobbanner2.jpg) no-repeat center top fixed;
+    height: 500px;
+    width: 100%;
+}
+
+#middenPic img {
+    margin: 0 auto;
+    padding-left: 300px;
+}
+
+#data {
+    width: 1200px;
+    height: 900px;
+    /* background-color: yellow;*/
+    overflow: hidden;
+}
+
+#data p {
+    float: right;
+    line-height: 20px;
+    margin: 10px 0;
+}
+
+#midden-table {
+    margin-top: 45px;
+    height: 800px;
+}
+
+.tab-title {
+    width: 1200px;
+    margin-left: 100px;
+}
+
+.tab-title>li {
+    float: left;
+    border: 1px solid gray;
+    height: 50px;
+    width: 200px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 24px;
+    background-color: #333333;
+    color: white;
+}
+
+.table-month {
+    margin-top: 10px;
+}
+
+.month-list li {
+    margin-top: 10px;
+    position: relative;
+}
+
+.month-list table {
+    display: table;
+}
+
+.month-list>li {
+    width: 100px;
+    line-height: 50px;
+    background-color: #000;
+}
+
+.InfoList {
+    width: 890px;
+    height: 30px;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    background-color: gray;
+}
+
+.InfoList tr {
+    line-height: 30px;
+}
+
+.InfoList th {
+    color: red;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.scrollWrap12 {
+    position: absolute;
+    left: -114px;
+    top: 35px;
+    line-height: 35px;
+    width: 1200px;
+    color: #000;
+}
+
+#table_bottom {
+    background: url(../img/GetJobbanner3.jpg) no-repeat center top;
+    height: 550px;
+}
+
+#table_bottom p {
+    width: 470px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 250px;
+}
+
+#table_bottom span {
+    display: block;
+    color: #f2f2f2;
+    margin-top: 15px;
+}
+
+#mingqi h2 {
+    text-align: center;
+    color: #EE5A00;
+}
+
+#mingqi ul {
+    width: 1200px;
+    margin-top: 30px;
+    background-color: #F7F7F7;
+}
+
+#mingqi ul li {
+    border-bottom: 1px solid gray;
+    margin: 10px 0;
+    line-height: 40px;
+}
+
+#photoes {
+    margin-top: 35px;
+}
+
+#photoes h2 {
+    color: #EE5A00;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#btn {
+    background-color: #EE5A00;
+    width: 80px;
+    line-height: 35px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+#picture {
+    background: url(../img/picture.png) no-repeat center top;
+    width: 1200px;
+    height: 678px;
+    margin-top: 15px;
+    position: relative;
+}
+
+#picture a {
+    display: block;
+    position: absolute;
+    width: 220px;
+    height: 220p;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#picture .picSet1 {
+    left: 335px;
+    top: 23px;
+}
+
+#picture .picSet2 {
+    left: 491px;
+    top: 0px;
+}
+
+#picture .picSet3 {
+    left: 718px;
+    top: 23px;
+}
+
+#picture .picSet4 {
+    left: 147px;
+    top: 238px;
+}
+
+#picture .picSet5 {
+    left: 261px;
+    top: 180px;
+}
+
+#picture .picSet6 {
+    left: 491px;
+    top: 230px;
+}
+
+#picture .picSet7 {
+    left: 718px;
+    top: 180px;
+}
+
+#picture .picSet8 {
+    left: 951px;
+    top: 239px;
+}
+
+#picture .picSet9 {
+    left: 335px;
+    top: 408px;
+}
+
+#picture .picSet10 {
+    left: 491px;
+    top: 457px;
+}
+
+#picture .picSet11 {
+    left: 718px;
+    top: 408px;
+}
+
+#ruzhi h2 {
+    text-align: center;
+    color: #EE5A00;
+    margin: 20px 0;
+}
+
+#ruzhi img {
+    width: 1200px;
+    height: 500px;
+}
+
+#dream {
+    margin-top: 30px;
+    background: url(../img/pic7.jpg) no-repeat center top;
+    height: 500px;
+}
+
+#dream>p>a {
+    display: inline-block;
+    background-color: #163C7B;
+    color: white;
+    width:150px;
+    line-height: 60px;
+    text-align: center;
+    margin-top: 400px;
+    margin-left:85px;
+    padding:12px 15px;
+    font-size: 22px;
+
+}
