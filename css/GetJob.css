@@ -14,6 +14,7 @@ h4 {
     margin: 0;
     padding: 0;
 }
+p{ color:red; }
 
 a {
     text-decoration: none;
@@ -24,7 +25,7 @@ a {
 }
 
 #header {
-    height: 810px;
+    height: 50px;
 }
 
 .Con {
@@ -63,9 +64,18 @@ a {
     width: 800px;
     height: 60px;
     float: right;
-    color: #BEB3A7;
     border: 1px solid red;
 }
+
+#rightnav a {
+    color: #CBCBCB;
+    font-size:20px;
+}
+
+#rightnav a:hover {
+    color: #FB671D;
+}
+#rightnav .current{ color: #FB671D;}
 
 #rightnav ul {
     float: right;
@@ -73,20 +83,20 @@ a {
 
 #rightnav li {
     float: left;
-    margin-left: 70px;
+    margin-left: 56px;
     line-height: 60px;
     font-weight: bolder;
 }
 
 .headerBanner {
-    margin-top: 60px;
+    margin-top: 10px;
     background: url(../img/GetJobbanner.jpg) no-repeat center top;
-    height: 1000px;
+    height: 750px;
     width: 100%;
 }
 
 #middenBody {
-    width: 1200px;
+    
     height: 1000px;
     margin: 0 auto;
 }
@@ -107,6 +117,7 @@ a {
     height: 900px;
     /* background-color: yellow;*/
     overflow: hidden;
+    margin:0 auto;
 }
 
 #data p {
@@ -118,6 +129,7 @@ a {
 #midden-table {
     margin-top: 45px;
     height: 800px;
+    width: 1200px;
 }
 
 .tab-title {
@@ -208,10 +220,15 @@ a {
     color: #EE5A00;
 }
 
+#mingqi span {
+    font-weight: bolder;
+}
+
 #mingqi ul {
     width: 1200px;
     margin-top: 30px;
     background-color: #F7F7F7;
+    margin:0 auto;
 }
 
 #mingqi ul li {
@@ -246,6 +263,7 @@ a {
     height: 678px;
     margin-top: 15px;
     position: relative;
+    margin:0 auto;
 }
 
 #picture a {
@@ -311,7 +329,8 @@ a {
     left: 718px;
     top: 408px;
 }
-
+#ruzhi{ margin:0 auto; width: 1200px;
+    height: 500px; }
 #ruzhi h2 {
     text-align: center;
     color: #EE5A00;
@@ -319,8 +338,8 @@ a {
 }
 
 #ruzhi img {
-    width: 1200px;
-    height: 500px;
+   
+    vertical-align: top;
 }
 
 #dream {
@@ -328,17 +347,17 @@ a {
     background: url(../img/pic7.jpg) no-repeat center top;
     height: 500px;
 }
+#dream p{ text-align: center; }
 
 #dream>p>a {
     display: inline-block;
     background-color: #163C7B;
     color: white;
-    width:150px;
+    width: 150px;
     line-height: 60px;
     text-align: center;
     margin-top: 400px;
-    margin-left:85px;
-    padding:12px 15px;
+    margin-left: 85px;
+    padding: 12px 15px;
     font-size: 22px;
-
 }
