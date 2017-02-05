@@ -108,14 +108,17 @@ a {
 }
 
 #middenPic img {
-    margin: 0 auto;
-    padding-left: 300px;
+   
+}
+#picwrap{
+    text-align: center;
+
 }
 
 #data {
     width: 1200px;
     height: 900px;
-    /* background-color: yellow;*/
+     background-color: yellow;
     overflow: hidden;
     margin:0 auto;
 }
@@ -134,14 +137,14 @@ a {
 
 .tab-title {
     width: 1200px;
-    margin-left: 100px;
+   
 }
 
 .tab-title>li {
     float: left;
     border: 1px solid gray;
     height: 50px;
-    width: 200px;
+    width: 237px;
     line-height: 50px;
     text-align: center;
     font-weight: bolder;
@@ -164,16 +167,18 @@ a {
 }
 
 .month-list>li {
-    width: 100px;
+    width: 145px;
     line-height: 50px;
     background-color: #000;
 }
 
+ 
+
 .InfoList {
-    width: 890px;
-    height: 30px;
+    width: 1035px;
+    height: 40px;
     position: absolute;
-    left: 120px;
+    left: 158px;
     top: 0;
     background-color: gray;
 }
@@ -186,16 +191,21 @@ a {
     color: red;
     font-size: 20px;
     font-weight: normal;
+     border:1px solid red;
 }
 
 .scrollWrap12 {
     position: absolute;
-    left: -114px;
-    top: 35px;
+    left: 158px;
+    top: 40px;
     line-height: 35px;
-    width: 1200px;
+    width: 1033px;
     color: #000;
+    border:1px solid red;
 }
+.scrollWrap12 td{  border:1px solid red; }
+
+
 
 #table_bottom {
     background: url(../img/GetJobbanner3.jpg) no-repeat center top;
