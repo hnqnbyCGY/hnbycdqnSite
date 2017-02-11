@@ -79,6 +79,7 @@
  #kaiban {
      /* height: 500px;*/
  }
+ /*前景*/
  
  #qianjing {
      background-color: #EC4C44;
@@ -137,7 +138,7 @@
      color: #414141;
      border-radius: 20px;
  }
- 
+  /*薪资*/
  #xinzi {
      background: url(../img/GetJobbanner2.jpg) no-repeat center top;
      height: 930px;
@@ -194,66 +195,95 @@
      margin: 0 15px;
      width: 258px;
  }
- 
- #teachers {
+  /*讲师*/
+ .jiangshi {
+     height: 1019px;
      background: url(../img/js_bg.jpg) no-repeat center top;
-     height: 978px;
  }
  
- #teachers {
-     margin: 0 auto;
+ .jiangshi .biaoti {
+     color: #fff;
+     margin-bottom: 20px;
  }
  
- #biaoti h1 {
-     padding-bottom: 25px;
-     color: white;
-     font-size: 40px;
-     padding-top: 25px;
+ .jiangshi>img {
+     display: block;
+     margin: 0 auto 55px;
  }
  
- #biaoti {
-     text-align: center;
-     padding-top: 25px;
- }
- 
- #teachers ul {
+ .js_list {
      width: 1200px;
      overflow: hidden;
+     padding-top: 50px;
+     margin-bottom: 50px;
  }
  
- #teachers li {
+ .js_list li {
      float: left;
+     color: #fff;
      position: relative;
      width: 225px;
      height: 268px;
-     padding: 15px 7px;
+     border-radius: 10px;
+     overflow: hidden;
+     background: #dddbde;
+     margin: 0 18px 30px 0;
  }
  
- #teachers li span {
-     position: absolute;
-     left: 7px;
-     top: 210px;
-     width: 100px;
-     height: 35px;
-     background-color: #EC4C44;
-     border-radius: 5px;
-     text-align: center;
-     line-height: 35px;
-     color: white;
-     font-size: 20px;
+ .js_list li:nth-child(5),
+ .js_list li:nth-child(10) {
+     margin-right: 0px;
  }
  
- #teachers a {
-     line-height: 60px;
-     width: 300px;
-     border: 4px solid #EC4C44;
-     font-size: 25px;
-     color: white;
+ .js_list li span {
      display: block;
+     position: absolute;
+     left: 0px;
+     top: 210px;
+     width: 105px;
+     height: 35px;
+     font-size: 22px;
+     line-height: 35px;
      text-align: center;
-     margin: 40px auto;
+     color: #fff;
+     background: #ec4c44;
  }
  
+ .js_list li p {
+     position: absolute;
+     width: 199px;
+     height: 149px;
+     border-radius: 5px;
+     background: rgba(171, 78, 72, 0.9);
+     color: #fff;
+     font-size: 14px;
+     line-height: 21px;
+     padding: 60px 13px;
+     left: 0px;
+     top: 0px;
+     display: none;
+     overflow: hidden;
+ }
+ 
+ .js_list li:hover p {
+     display: block;
+ }
+ 
+ .js_list li p a {
+     color: #fff;
+ }
+ 
+ .jiangshi .btn {
+     width: 304px;
+     height: 49px;
+     border-radius: 3px;
+     border: 4px solid #ec4c44;
+     line-height: 49px;
+     background: rgba(255, 255, 255, 0);
+     color: #dddbde;
+     font-size: 22px;
+ }
+  /*课程*/
  #kecheng {
      border: 1px solid red;
      background-color: #E2E2E2;
@@ -328,30 +358,6 @@
      background: #c4c4c4;
  }
  
- /*.kc_wrap:before {
-     display: block;
-     position: absolute;
-     content: "";
-     width: 1225px;
-     height: 1px;
-     background: #C4C4C4;
-     top: 70px;
-     left: -25px;
-     z-index: 1;
- }
- 
- .kc_wrap:after {
-     display: block;
-     position: absolute;
-     content: "";
-     width: 1px;
-     height: 100%;
-     left: 35px;
-     top: 0;
-     background: #c4c4c4;
-     z-index: 1;
- }
- */
  .kc_jieduan {
      display: none;
      position: relative;
@@ -367,7 +373,6 @@
  .kc_wrap .kc_jieduan:nth-child(1) {
      display: block;
  }
- 
  
  .kc_wrap .kc_jieduan:nth-child(4) .kc_tubiao {
      background: #1377a0 url(../img/kecheng/kc_list1_img1_hover.png) no-repeat center;
@@ -489,7 +494,7 @@
      border-radius: 10px;
      line-height: 60px;
  }
- 
+  /*良心教育*/
  .liangxin {
      background: #f3f3f3;
      padding-bottom: 70px;
@@ -612,7 +617,7 @@
      ;
      line-height: 25px;
  }
- 
+  /*环境*/
  .huanjing {
      height: 1032px;
      background: url(../img/huanjing/hj_bg.jpg) no-repeat center top;
@@ -625,14 +630,10 @@
  
  .hj_wrap {
      width: 842px;
-     height: 525px;
+     height: 708px;
      margin: 0 auto;
      position: relative;
      overflow: hidden;
- }
- 
- .huanjing .base .prevbtn {
-     left: 0;
  }
  
  .huanjing .base span {
@@ -644,6 +645,31 @@
      top: 540px;
  }
  
+ .huanjing .base .prevbtn {
+     left: 0px;
+ }
+ 
+ .huanjing .base .nextbtn {
+     right: 0px;
+ }
+ 
+ .hj_list {
+     width: 6000px;
+     height: 525px;
+     position: absolute;
+ }
+ 
+ .hj_list li {
+     float: left;
+     width: 842px;
+     height: 525px;
+ }
+ 
+ .hj_list li img {
+     width: 842px;
+     height: 525px;
+ }
+  /*咨询*/
  .zixun {
      background: #e2e2e2;
  }
@@ -663,10 +689,22 @@
      background: url(../img/zx_img1.png) no-repeat center top;
  }
  
+ .zx_list li:nth-child(2) {
+     background: url(../img/zx_img2.png) no-repeat center top;
+ }
+ 
+ .zx_list li:nth-child(3) {
+     background: url(../img/zx_img3.png) no-repeat center top;
+ }
+ 
  .zx_list li a {
      display: block;
      width: 182px;
      height: 25px;
      padding-top: 145px;
      color: #000;
+ }
+ 
+ .zx_list li:hover a {
+     color: #ec4c44;
  }

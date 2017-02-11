@@ -5,16 +5,70 @@
     <meta charset="utf-8">
     <title>html5页面</title>
     <link rel="stylesheet" type="text/css" href="../css/HTML5.css">
+    <script type="text/javascript" src="../script/jQuery-3.1.1.js"></script>
+    <!--实现课程体系切换效果-->
     <script type="text/javascript">
-function changeImg(num) {
-    var img = document.getElementsByTagName('img');
-    for (i = 0; i <= img.length; i++) {
-        if (i == num + 1) img[i].style.display = "inline";
-        else img[i].style.display = "none";
-        if (num == 3) img[0].style.display = "inline"; //这里的数字3需要与下面html中的最后一个保持一致
-    }
-}
-</script>
+    $(document).ready(function() {
+        $(".kc_list1 li").each(function(index) {
+            $(this).mouseover(function() {
+                $(this).addClass('hover').siblings('li').removeClass('hover');
+                $(".kc_wrap .kc_jieduan").eq(index).show().siblings('.kc_jieduan').hide();
+            })
+
+        })
+    })
+    </script>
+    <!--实现遮罩层效果-->
+    <script type="text/javascript">
+    $("#teachers").mouseover(function() {
+        $(this).find(".bg").show();
+    });
+    $("#teachers").mouseout(function() {
+        $(this).find(".bg").hide();
+    });
+    </script>
+    <!--实现图片切换效果-->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        var i = 0;
+        $(".nextbtn").on("click", function() {
+            clearInterval(timer);
+            i++;
+            if (i >= $(".hj_list li").length) {
+                i = 0;
+            }
+            move();
+
+        })
+        $(".prevbtn").on("click", function() {
+            clearInterval(timer);
+            --i;
+            if (i < 0) {
+                i = $(".hj_list li").length - 1;
+            }
+            move();
+
+        })
+
+        function move() {
+            $(".hj_list").animate({
+                left: -i * 842 + 'px'
+            }, 500)
+        }
+
+        var timer = setInterval(move1, 2000)
+
+        function move1() {
+            i++;
+            if (i >= $(".hj_list li").length) {
+                i = 0;
+            }
+            $(".hj_list").animate({
+                left: -i * 842 + 'px'
+            }, 500)
+        }
+    });
+    </script>
 </head>
 
 <body>
@@ -239,56 +293,64 @@ function changeImg(num) {
                     </div>
                 </div>
             </div>
-            <!--教师团队-->
-            <div id="teachers">
+            <!-- 讲师阵容 -->
+            <div class="jiangshi">
                 <div class="base">
-                    <div id="biaoti">
-                        <h1>专 业 教 学 团 队 打 造 实 战 型 精 英</h1>
-                        <img src="../img/js_img1.png">
-                    </div>
-                    <ul>
+                    <h2 class="biaoti">专业教学团队 打造实战型精英</h2>
+                    <img src="../img/js_img1.png">
+                    <ul class="js_list">
                         <li>
                             <img src="../img/1.png">
                             <span>王老师</span>
+                            <p>千锋HTML5教学总监，原中科院计算所专家，曾任北京市高校师资培训中心特邀讲师,多年担任北京市属高校师资培训工作。11年的UI、WEB前端开发教育培训经验，4年HTML5开发经验，深刻理解教学研究...<a href="http://www.mobiletrain.org/teacher/" target="_blank">[详细]</a></p>
                         </li>
                         <li>
                             <img src="../img/2.png">
-                            <span>王老师</span>
+                            <span>杜老师</span>
+                            <p>拥有10年WEB前端开发经验，6年教学经验。原妙味课堂高级讲师，HTML5梦工厂特约讲师，是中国首批从事教育培训的HTML5讲师，开发过日均千万的PV项目。曾被邀请录讲名师课程，录有：《逐...<a href="http://www.mobiletrain.org/teacher/" target="_blank">[详细]</a></p>
                         </li>
                         <li>
                             <img src="../img/3.png">
-                            <span>王老师</span>
+                            <span>陆老师</span>
+                            <p>10年以上Web前端开发经验，曾在运营大型门户网站、电商网站及研发电子政务平台的公司就职。有3年以上教学经验，出品《Web前端经典时尚案例》，《DOM探索之旅》，《Avalon探索之旅》...<a href="http://www.mobiletrain.org/teacher/" target="_blank">[详细]</a></p>
                         </li>
                         <li>
                             <img src="../img/4.png">
-                            <span>王老师</span>
+                            <span>郝老师</span>
+                            <p>千锋HTML5学科高级讲师，3年软件开发经验，2012年开始从事手机移动端的开发。同时负责过多个web端与移动端的项目开发，有着丰富经验的项目开发经验，授课风趣幽默，注重理论基础与实际项目相结合...<a href="http://www.mobiletrain.org/teacher/" target="_blank">[详细]</a></p>
                         </li>
                         <li>
                             <img src="../img/5.png">
-                            <span>王老师</span>
+                            <span>吴老师</span>
+                            <p>千锋教育HTML5讲师，年轻，有活力。曾任苏州某上市公司前端项目主管，指导并开发多个电子商务平台；在教学上及时根据行业动态正确调整教学方法，使学生能够更快的和社会接轨。授课思路清晰，...<a href="http://www.mobiletrain.org/teacher/" target="_blank">[详细]</a></p>
                         </li>
                         <li>
                             <img src="../img/6.png">
-                            <span>王老师</span>
+                            <span>尹老师</span>
+                            <p>从事5年的JavaWeb开发，有3年的互联网平台研发经验，2011年参与开发了大型海运电子商务平台。担任过程序员，产品设计，teamleader，2015年参与开发了ifootball安卓端社交APP。3年的教学工...<a href="http://www.mobiletrain.org/teacher/" target="_blank">[详细]</a></p>
                         </li>
                         <li>
                             <img src="../img/7.png">
-                            <span>王老师</span>
+                            <span>陈老师</span>
+                            <p>千锋HTML5讲师，性格开朗，为人细心，做事认真，有较强的责任心，多年的前端项目开发经验。常以幽默的语言活跃课堂气氛。授课思路清晰，以贴切的案例，形象的演示一些难以理解的内容，让学员轻易掌...<a href="http://www.mobiletrain.org/teacher/" target="_blank">[详细]</a></p>
                         </li>
                         <li>
                             <img src="../img/8.png">
-                            <span>王老师</span>
+                            <span>任老师</span>
+                            <p>千锋HTML5学科高级讲师，拥有3年的HTML5开发经验，前端开发工程师，精通Web端相关各种开发基础与技巧。经常将自己多年的开发经验通过各种有趣示例教授给学生，授课幽默风趣，耐心细致，深...<a href="http://www.mobiletrain.org/teacher/" target="_blank">[详细]</a></p>
                         </li>
                         <li>
                             <img src="../img/9.png">
-                            <span>王老师</span>
+                            <span>邵老师</span>
+                            <p>千锋HTML5学科高级讲师，三年多web前端开发经验，熟练使用HTML5，jquery，CSS3，js等技术开发多个web和移动端App应用，曾在IBM中国和网易等资深互联网公司任职，并且担任前端的team leader ...<a href="http://www.mobiletrain.org/teacher/" target="_blank">[详细]</a></p>
                         </li>
                         <li>
                             <img src="../img/10.png">
                             <span>王老师</span>
+                            <p>三年多工作经验，专注于WEB前端静态页面与动态效果开发，熟练使用WEB前端技术，CSS3,HTML5, jQuery,原生js等基本技术;对jQuery Mobile, jQuery UI , jQuery EasyUI等流行前端框架的实...<a href="http://www.mobiletrain.org/teacher/" target="_blank">[详细]</a></p>
                         </li>
                     </ul>
-                    <a href="">点击找找你喜欢的老师</a>
+                    <a href="#" target="_blank" class="btn">点击找找你喜欢的讲师</a>
                 </div>
             </div>
             <!--课程选择-->
@@ -778,23 +840,22 @@ function changeImg(num) {
                 </div>
             </div>
             <!-- 校园环境 -->
-            <div class="huanjing section">
+            <div class="huanjing">
                 <div class="base">
                     <div class="hj_wrap">
-                     <div>
-                        <ul class="hj_list">
-
-                            <li><img src="../img/huanjing/hj_img1.jpg" onclick="changeImg(0)" style="display:inline;"></li>
-                            <li><img src="../img/huanjing/hj_img2.jpg" onclick="changeImg(1)" style="display:none;"></li>
-                            <li><img src="../img/huanjing/hj_img3.jpg" onclick="changeImg(2)" style="display:none;"></li>
-                            <li><img src="../img/huanjing/hj_img4.jpg" onclick="changeImg(3)" style="display:none;"></li>
-                            <li><img src="../img/huanjing/hj_img5.jpg"></li>
-                            <li><img src="../img/huanjing/hj_img6.jpg"></li>
-                           
-                        </ul>
+                        <div>
+                            <ul class="hj_list">
+                                <li><img src="../img/huanjing/hj_img1.jpg"></li>
+                                <li><img src="../img/huanjing/hj_img2.jpg"></li>
+                                <li><img src="../img/huanjing/hj_img3.jpg"></li>
+                                <li><img src="../img/huanjing/hj_img4.jpg"></li>
+                                <li><img src="../img/huanjing/hj_img5.jpg"></li>
+                                <li><img src="../img/huanjing/hj_img6.jpg"></li>
+                            </ul>
+                        </div>
+                        <span class="prevbtn"></span>
+                        <span class="nextbtn"></span>
                     </div>
-                    <span class="prevbtn"></span>
-                    <span class="nextbtn"></span>
                 </div>
             </div>
             <!-- 疑难咨询 -->
@@ -805,11 +866,8 @@ function changeImg(num) {
                     <li><a href="" target="_blank">查看免费教程视频</a></li>
                 </ul>
             </div>
+            <div id="footer"></div>
         </div>
-        <div id="footer"></div>
-    </div>
 </body>
-
-
 
 </html>
