@@ -183,16 +183,6 @@ a {
     background-color: gray;
 }
 
-.InfoList tr {
-    line-height: 30px;
-}
-
-.InfoList th {
-    color: red;
-    font-size: 20px;
-    font-weight: normal;
-     border:1px solid red;
-}
 
 .scrollWrap12 {
     position: absolute;
