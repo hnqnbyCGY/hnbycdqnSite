@@ -33,68 +33,45 @@
             </div>
             <div id="data">
                 <p>以下数据来自青鸟博宇内部数据统计</p>
-                
                 <div id="midden-table" class="inner">
                     <ul class="tab-title">
-                        <li>2016
-                            <div class="table-month">
-                                <ul class="month-list">
-                                    <li>十二月
-                                    
-                                        <table class="InfoList">
-                                            <tbody>
-                                                <tr>
-                                                    <th width="8%">姓名</th>
-                                                    <th width="8%">学历</th>
-                                                    <th width="10%">目前状态</th>
-                                                    <th width="15%">专业</th>
-                                                    <th width="20%">就业单位</th>
-                                                    <th width="8%">月薪</th>
-                                                    <th width="10%">地点</th>
-                                                    <th width="15%">就业时间</th>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <!--<div class="scrollWrap12">
-                                            <table>
-                                                <tbody>
-                                                    <tr>
-                                                        <td width="8%">胡*一</td>
-                                                        <td width="8%">专科</td>
-                                                        <td width="15%">在职</td>
-                                                        <td width="15%">计算机网络</td>
-                                                        <td width="20%">深圳市**公司</td>
-                                                        <td width="8%">10000</td>
-                                                        <td width="10%">深圳</td>
-                                                        <td width="20%">2016.12.1</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            
-                                        </div>
-                                        -->
-                                    </li>
-                                    <li>十一月</li>
-                                    <li>十月</li>
-                                    <li>九月</li>
-                                    <li>八月</li>
-                                    <li>七月</li>
-                                    <li>六月</li>
-                                    <li>五月</li>
-                                    <li>四月</li>
-                                    <li>三月</li>
-                                    <li>二月</li>
-                                    <li>一月</li>
-                                </ul>
-                            </div>
-                        </li>
+                        <li>2016</li>
                         <li>2015</li>
                         <li>2014</li>
                         <li>2013</li>
                         <li>2012</li>
                     </ul>
+                    <div class="table-month">
+                        <ul class="month-list">
+                            <li value="12">十二月</li>
+                            <li value="11">十一月</li>
+                            <li value="10">十月</li>
+                            <li value="9">九月</li>
+                            <li value="8">八月</li>
+                            <li value="7">七月</li>
+                            <li value="6">六月</li>
+                            <li value="5">五月</li>
+                            <li value="4">四月</li>
+                            <li value="3">三月</li>
+                            <li value="2">二月</li>
+                            <li value="1">一月</li>
+                        </ul>
+                    </div>
+                    <table class="InfoList">
+                        <tbody>
+                            <tr>
+                                <th width="8%">姓名</th>
+                                <th width="8%">学历</th>
+                                <th width="10%">目前状态</th>
+                                <th width="15%">专业</th>
+                                <th width="20%">就业单位</th>
+                                <th width="8%">月薪</th>
+                                <th width="15%">就业时间</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="clear"></div>
                 </div>
-                
                 <p>以上数据来自青鸟博宇内部数据统计</p>
             </div>
             <!--数据表下面数据-->
@@ -163,6 +140,658 @@
         </div>
         <div id="footer"></div>
     </div>
+    <script type="text/javascript" src="script/jQuery-3.1.1-min.js"></script>
+    <script type="text/javascript">
+    var StudentData=[{StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.10.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.01.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.10.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.02.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.02.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.01.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.09.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.08.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.07.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.01.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.06.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.08.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.11.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.04.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.06.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.04.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.08.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.04.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.06.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.08.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.04.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.01.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.01.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.11.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.04.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.04.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.05.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.08.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.07.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.08.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.09.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.06.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.08.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.07.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.01.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.10.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.01.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.10.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.02.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.02.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.01.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.09.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.08.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.07.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.01.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.06.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.08.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.11.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.04.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.06.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.04.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.08.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.04.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.06.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.08.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.04.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.01.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.01.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.11.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.04.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.04.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.05.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.08.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.07.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.08.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.09.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.06.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.08.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.07.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.01.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.10.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.01.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.10.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.02.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.02.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.01.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.09.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.08.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.07.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.01.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.06.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.08.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.11.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.04.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.06.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.04.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.08.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.04.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.06.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.08.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.04.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.01.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.01.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.11.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.04.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.04.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.05.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.08.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.07.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.08.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.09.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.06.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.08.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.07.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.01.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.10.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.01.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.10.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.02.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.02.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.01.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.09.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.08.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.07.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.01.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.06.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.08.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.11.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.04.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.06.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.04.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.08.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.04.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.06.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.08.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.04.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.01.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.01.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.11.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.04.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.04.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.05.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.08.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.07.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.08.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.09.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.06.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.08.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.07.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.01.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.10.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.01.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.10.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.02.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.02.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.01.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.09.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.08.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.07.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.01.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.06.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.08.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.11.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.04.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.06.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.04.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.08.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.04.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.06.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.08.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.04.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.01.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.01.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.11.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.04.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.04.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.05.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.08.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.07.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.08.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.09.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.06.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.08.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.07.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.01.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.10.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.01.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.10.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.02.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.02.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.01.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.09.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.08.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.07.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.01.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.06.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.08.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.11.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.04.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.06.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.04.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.08.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.12.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.04.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.06.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.08.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.04.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.03.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.01.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.01.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.11.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.12.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一1",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.04.09"},
+                {StuName:"胡一2",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.11.09"},
+                {StuName:"胡一3",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.07.09"},
+                {StuName:"胡一4",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2016.04.09"},
+                {StuName:"胡一5",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一6",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一7",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.05.09"},
+                {StuName:"胡一8",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一9",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.08.09"},
+                {StuName:"胡一10",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.11.09"},
+                {StuName:"胡一11",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.12.09"},
+                {StuName:"胡一12",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2015.07.09"},
+                {StuName:"胡一13",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.02.09"},
+                {StuName:"胡一14",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一15",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.08.09"},
+                {StuName:"胡一16",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.09.09"},
+                {StuName:"胡一17",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.04.09"},
+                {StuName:"胡一18",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.06.09"},
+                {StuName:"胡一19",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2013.07.09"},
+                {StuName:"胡一20",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.11.09"},
+                {StuName:"胡一21",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.08.09"},
+                {StuName:"胡一22",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.12.09"},
+                {StuName:"胡一23",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.07.09"},
+                {StuName:"胡一24",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.05.09"},
+                {StuName:"胡一25",Edu:"本科",Status:"在职",Major:"计算机应用",Company:"在职",Pay:"10000",JobDate:"2014.01.09"}
+    ]
+    var years="";
+    function getHtml(student){
+        var html = "";
+    
+        html+="<tr>";
+        html+="<td>"+student.StuName+"</td>";
+        html+="<td>"+student.Edu+"</td>";
+        html+="<td>"+student.Status+"</td>";
+        html+="<td>"+student.Major+"</td>";
+        html+="<td>"+student.Company+"</td>";
+        html+="<td>"+student.Pay+"</td>";
+        html+="<td>"+student.JobDate+"</td>";
+        html+="</tr>";
+        return html;
+    }
+    function showData(year,month){
+
+       $(".InfoList>tbody").html("");
+       var html='<tr><th width="8%">姓名</th><th width="8%">学历</th><th width="10%">目前状态</th><th width="15%">专业</th><th width="20%">就业单位</th><th width="8%">月薪</th><th width="15%">就业时间</th></tr>';
+        for (var i = 0; i < StudentData.length; i++) {
+            if(typeof(year)=="undefined"&& typeof(month)=="undefined"){
+                html+=getHtml(StudentData[i]);
+            }else if(typeof(year)=="number"&& typeof(month)=="undefined"){
+                if (StudentData[i].JobDate.substr(0,4)==year){
+                    html+=getHtml(StudentData[i]);
+                }  
+            }else if(typeof(year)=="number"&& typeof(month)=="number"){
+                console.log("111");
+                if (StudentData[i].JobDate.substr(0,4)==year&& StudentData[i].JobDate.substr(5,2)==month){
+                     html+=getHtml(StudentData[i]);
+                }
+            }
+
+       }
+        $(".InfoList>tbody").append(html);
+    }
+    $(".tab-title>li").click(function(event) {
+        years=parseInt(this.innerText);
+        console.log(years);
+        showData(years);
+    });
+    $(".month-list>li").click(function(event) {
+        var months=this.value;
+        console.log(months);
+
+        showData(years,months);
+    });
+
+    </script>
 </body>
 
 </html>
