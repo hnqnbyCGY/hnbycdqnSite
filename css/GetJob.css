@@ -14,7 +14,10 @@ h4 {
     margin: 0;
     padding: 0;
 }
-p{ color:red; }
+
+p {
+    color: red;
+}
 
 a {
     text-decoration: none;
@@ -69,13 +72,16 @@ a {
 
 #rightnav a {
     color: #CBCBCB;
-    font-size:20px;
+    font-size: 20px;
 }
 
 #rightnav a:hover {
     color: #FB671D;
 }
-#rightnav .current{ color: #FB671D;}
+
+#rightnav .current {
+    color: #FB671D;
+}
 
 #rightnav ul {
     float: right;
@@ -96,7 +102,6 @@ a {
 }
 
 #middenBody {
-    
     height: 1000px;
     margin: 0 auto;
 }
@@ -107,20 +112,18 @@ a {
     width: 100%;
 }
 
-#middenPic img {
-   
-}
-#picwrap{
-    text-align: center;
+#middenPic img {}
 
+#picwrap {
+    text-align: center;
 }
 
 #data {
     width: 1200px;
-    height: 900px;
-     background-color: yellow;
+    height: 1080px;
+    background-color: yellow;
     overflow: hidden;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 #data p {
@@ -137,7 +140,6 @@ a {
 
 .tab-title {
     width: 1200px;
-   
 }
 
 .tab-title>li {
@@ -157,13 +159,16 @@ a {
     margin-top: 10px;
 }
 
+.month-list {
+    float: left;
+}
+
 .month-list li {
     margin-top: 10px;
     position: relative;
-}
-
-.month-list table {
-    display: table;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
 }
 
 .month-list>li {
@@ -172,30 +177,34 @@ a {
     background-color: #000;
 }
 
- 
-
 .InfoList {
     width: 1035px;
     height: 40px;
-    position: absolute;
-    left: 158px;
-    top: 0;
     background-color: gray;
+    float: right;
+    margin-top: 10px;
 }
 
-
-.scrollWrap12 {
-    position: absolute;
-    left: 158px;
-    top: 40px;
-    line-height: 35px;
-    width: 1033px;
-    color: #000;
-    border:1px solid red;
+.InfoList tr {
+    line-height: 30px;
 }
-.scrollWrap12 td{  border:1px solid red; }
 
+.InfoList th {
+    color: red;
+    font-size: 20px;
+    font-weight: normal;
+    border: 1px solid red;
+}
 
+.month-list li:hover,
+.tab-title li:hover {
+    cursor: pointer;
+    background-color: #907CAA;
+}
+
+.clear {
+    clear: both;
+}
 
 #table_bottom {
     background: url(../img/GetJobbanner3.jpg) no-repeat center top;
@@ -228,7 +237,7 @@ a {
     width: 1200px;
     margin-top: 30px;
     background-color: #F7F7F7;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 #mingqi ul li {
@@ -263,7 +272,7 @@ a {
     height: 678px;
     margin-top: 15px;
     position: relative;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 #picture a {
@@ -329,16 +338,24 @@ a {
     left: 718px;
     top: 408px;
 }
-#ruzhi{ margin:0 auto; width: 1200px;
-    height: 500px; }
+
+#ruzhi {
+    margin: 0 auto;
+    width: 1200px;
+    height: 500px;
+}
+
 #ruzhi h2 {
     text-align: center;
     color: #EE5A00;
     margin: 20px 0;
 }
-#ruzhi_wrap{ text-align: center; }
+
+#ruzhi_wrap {
+    text-align: center;
+}
+
 #ruzhi img {
-   
     vertical-align: top;
 }
 
@@ -347,7 +364,10 @@ a {
     background: url(../img/pic7.jpg) no-repeat center top;
     height: 500px;
 }
-#dream p{ text-align: center; }
+
+#dream p {
+    text-align: center;
+}
 
 #dream>p>a {
     display: inline-block;
